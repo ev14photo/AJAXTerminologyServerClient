@@ -1,14 +1,11 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
 		function log( message ) {
 			$( "<div>" ).text( message ).prependTo( "#codding_log" );
 			$( "#codding_log" ).scrollTop( 0 );
 		}
-
 const codedfields = document.getElementsByClassName("coded");
 let codedfieldsLeft = codedfields.length;
 for (const codedfield of codedfields) {
-console.log(JSON.stringify(codedfield.id))
 		$( "#"+codedfield.id).autocomplete({
 
 			source: function( request, response ) {
@@ -31,7 +28,20 @@ console.log(JSON.stringify(codedfield.id))
 						method: configs.operation,
 						descriptions_sub_path: configs.descriptions_sub_path,
 						codes_sub_path: configs.codes_sub_path,
-						save_logs:configs.save_logs
+						save_logs:configs.save_logs,
+						activefilter:configs.activefilter,
+						definitionstatusfilter:configs.definitionstatusfilter,
+						language:configs.language,
+						preferredin:configs.preferredin,
+						acceptablein:configs.acceptablein,
+						preferredoracceptablein:configs.preferredoracceptablein,
+						ecl:configs.ecl,
+						statedecl:configs.statedecl,
+						conceptids:configs.conceptids,
+						searchmode:configs.searchmode,
+						searchafter:configs.searchafter,
+						includedescendantcount:configs.includedescendantcount,
+						form:configs.form
 					},
 					success: function( data ) {
 						$("#"+codedfield.id).removeClass("ui-autocomplete-loading" );
@@ -50,3 +60,4 @@ console.log(JSON.stringify(codedfield.id))
 		});
 	}
 });
+
