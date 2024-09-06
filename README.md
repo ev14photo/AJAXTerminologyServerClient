@@ -72,6 +72,7 @@ If in the page is defined a div or another writable element with the id codding_
 # Sample
 
 sample.html is a basic example with two fields and the corresponding code field for each description. A log with id codding_log is included to debug description selection and code assignations is included in the page.
+Input text coding is shown in this example to show the name, id, config and class assignation.
 ![logo](/sample.png "Sample File Screenshot")
 
 
