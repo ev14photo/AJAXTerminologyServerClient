@@ -1,0 +1,14 @@
+	.ui-autocomplete-loading {
+		background: white url("images/ui-anim_basic_16x16.gif") right center no-repeat;
+	}
+	body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+	font-size: 1em;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
