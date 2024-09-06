@@ -65,8 +65,14 @@ Optionally it is posible to set the field id to store the code associated with t
 
 <code>&lt;input type="hidden" name="descriptor_code" id="descriptor_code"/></code>
 
-## Log window
+# Log window
 
 If in the page is defined a div or another writable element with the id codding_log a registry of selected descriptors and associated codes will be written
+
+# Sample
+
+sample.html i a basic example with tho fields and the corresponding code for each description.
+
+![logo](/sample.png "Sample File Screenshot")
 
 
