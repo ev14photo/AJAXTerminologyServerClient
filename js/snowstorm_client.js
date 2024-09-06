@@ -1,8 +1,8 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 		function log( message ) {
-			$( "<div>" ).text( message ).prependTo( "#log" );
-			$( "#log" ).scrollTop( 0 );
+			$( "<div>" ).text( message ).prependTo( "#codding_log" );
+			$( "#codding_log" ).scrollTop( 0 );
 		}
 
 const codedfields = document.getElementsByClassName("coded");
@@ -43,9 +43,10 @@ console.log(JSON.stringify(codedfield.id))
 			select: function( event, ui ) {
 				configs2 = jQuery.parseJSON($("#"+codedfield.id).attr("config"));
 				$("#"+configs2.code_field_id).val(ui.item.id);
-				log( "Seleccionado para el campo : " +codedfield.id + " la descripci\xF3n " + ui.item.value + " con c\xF3digo Snomed CT: " + ui.item.id );
+				if($('#codding_log').length){
+					log( "Selected for field id " +codedfield.id + " the text string: " + ui.item.value + " with associated code: " + ui.item.id );
+				}
 			}
-		} );
-}
-
+		});
+	}
 });
