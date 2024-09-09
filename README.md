@@ -55,7 +55,7 @@ In the text field the id propertie is required and must be unique. Class must ha
 <li>form
 
 ## Code path and description in response
-Similarly, through config parameters, we specify the path of the result that we will take as code and as a description, using dot notation within the items element of the JSON structure returned within "items".
+Similarly, through config parameters, we specify the path of the result that we will take as code and as a description, using dot notation within the items element of the JSON structure returned.
 
 <li>descriptions_sub_path: concept.fsn.term
 <li>codes_sub_path: concept.conceptId
