@@ -23,9 +23,9 @@ If "save_logs" parameter is set to true (as it is in the example below) the prog
 
 # Input box settings
 
-Any text input with class=coded will be detected by the loaded functions and used as input fields to search in the terminolgy server. 
+Any text input with class="coded" will be detected by the loaded functions and used as input fields to search in the terminolgy server. 
 
-In the text field name and id properties are required and must be equal. Class must have value set to "coded" and a "config" properties field with all the parameters coded in JSON.
+In the text field the id propertie is required and must be unique. Class must have value set to "coded" and a "config" properties field with all the parameters coded in JSON.
 
 <code>&lt;input id="descriptor" name="descriptor" config='{"server":"https://snowstorm-training.snomedtools.org/snowstorm/snomed-ct/browser", "branch":"MAIN", "operation":"descriptions", "offset":"0", "limit":"50","termactive":"true","groupbyconcept":"false", "semantictag":"organism", "descriptions_sub_path": "concept.fsn.term", "codes_sub_path":"concept.conceptId","save_logs":"true", "code_field_id":"descriptor_code"}' class="coded"/></code>
 
