@@ -12,7 +12,7 @@ Jquery and JqueryUI are required, and files js/snowstorm_client.js and css/snows
 
  # AJAX Server
 
- The executable server (search.php) must be in the root directory with de actual configuration. You can place it wherever you want changing the path in the AJAX call in snowstorm_client.js (line 19).
+ The executable server (search.php) is in the root directory with de actual configuration. You can place it wherever you want changing the path in the AJAX call in file js/snowstorm_client.js (line 19).
 
  				$.ajax( {
 					type: 'POST',
