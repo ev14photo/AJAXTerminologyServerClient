@@ -19,7 +19,7 @@ Jquery and JqueryUI are required, and files js/snowstorm_client.js and css/snows
 					url: "search.php?text="+$("#"+codedfield.id).val(),
 					dataType: "json",
 
-If "save_logs" parameter is set to true (as it is in the example below) the program will register in the PHP error log file the complete URL of the SnowStorm call in order to check and verify the calls to SnowStorm or to detect errors of configuration.
+If "save_logs" parameter is set to true (as it is in the example below) the program will register in the PHP error log file the complete URL of the SnowStorm call in order to check and verify the calls to SnowStorm or to detect misconfiguration.
 
 # Input box settings
 
